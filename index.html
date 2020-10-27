@@ -745,7 +745,7 @@
 			<div class="active carousel-item" style=background-image:url(images/black.jpg)>
 				<div class="carousel-caption d-md-block d-none">
 					<h3 class=display-4>CustomRapid</h3>
-					<p class=lead>Build your business apps without any coding</p>
+					<p class=lead>Digitalize your manufacturing shopfloor with clicks</p>
 					<button class="btn btn-primary" type=button data-target=#createProject data-toggle=modal>Get Started</button>
 				</div>
 			</div>
@@ -761,7 +761,7 @@
 						<i class="m-auto material-icons text-primary">block</i>
 					</div>
 					<h4>No Code</h4>
-					<p class="lead mb-0">Anyone in your team can build app from sources like spreadsheet, cloudsheet or from scratch
+					<p class="lead mb-0">Allows Engineers, Supervisors & Admins from manufacturing factory to build app from sources like ERP, spreadsheet & cloudsheets.
 				</div>
 			</div>
 			<div class=col-lg-4>
@@ -770,7 +770,7 @@
 						<i class="m-auto material-icons text-primary">devices</i>
 					</div>
 					<h4>All Devices</h4>
-					<p class="lead mb-0">Supports multi platforms Web, Android and IOS
+					<p class="lead mb-0">Supports multi platforms Web, Android and iOS
 				</div>
 			</div>
 			<div class=col-lg-4>
@@ -778,8 +778,8 @@
 					<div class="d-flex features-icons-icon">
 						<i class="m-auto material-icons text-primary">business</i>
 					</div>
-					<h4>Business Templates</h4>
-					<p class="lead mb-0">Provide multiple business templates for building Apps
+					<h4>Manufacturing Business Templates</h4>
+					<p class="lead mb-0">Provide multiple business templates for building Apps to cater daily shopfloor needs
 				</div>
 			</div>
 		</div>
@@ -789,22 +789,17 @@
 	<div class=modal-dialog>
 		<div class=modal-content>
 			<div class=modal-header>
-				<h4 class=modal-title>Create Project</h4>
+				<h4 class=modal-title>Create App</h4>
 				<button class=close type=button data-dismiss=modal>×</button>
 			</div>
 			<div class=modal-body>
 				<div class=form-group>
-					<label for=usr>Project Name:</label>
+					<label for=usr>App Name:</label>
 					<input class=form-control id=prN placeholder="Enter app name...">
 				</div>
 				<div class="container">
 					<p style="font-weight: bold;">Business Templates:</p>
 					<form action="/action_page.php">
-						<div class="form-check">
-							<label class="form-check-label" for="check1">
-								<input type="checkbox" class="form-check-input" disabled>Production Dashboard
-							</label>
-						</div>
 						<div class="form-check">
 							<label class="form-check-label" for="check2">
 								<input class=form-check-input onclick="clickWorkTemp()"  type=checkbox >Work instruction & completion tracking
@@ -817,7 +812,7 @@
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-								<input type="checkbox" class="form-check-input" disabled>Operater training
+								<input type="checkbox" class="form-check-input" disabled>Operator training
 							</label>
 						</div>
 						<div class="form-check">
@@ -830,6 +825,11 @@
 								<input type="checkbox" class="form-check-input" disabled>Auditing
 							</label>
 						</div>
+						<div class="form-check">
+							<label class="form-check-label" for="check1">
+								<input type="checkbox" class="form-check-input" disabled>Production Dashboard
+							</label>
+						</div>
 					</form>
 				</div>
 				<div class="container">
@@ -838,7 +838,7 @@
 						<div class="form-check">
 							<label class="form-check-label" for="check8">
 
-								<input class=form-check-input id=check1 type=checkbox name=option1 onclick=ShowERP() value=something>Build from idea
+								<input class=form-check-input id=check1 type=checkbox name=option1 onclick=ShowERP() value=something disabled>Build from idea
 							</label>
 						</div>
 					</form>
@@ -849,7 +849,7 @@
 						<div class="form-check">
 							<label class="form-check-label" for="check1">
 								<input class=form-check-input id=check7 type=checkbox name=option2
-								       onclick=ShowExcel() value=something>Spreadsheet
+								       onclick=ShowExcel() value=something>Excel
 							</label>
 						</div>
 						<div class="form-check">
@@ -871,7 +871,7 @@
 					</div>
 					<div class=wrapper-API id=api style=visibility:hidden>
 						<div class=container>
-							<p>Available API's:
+							<p>Available APIs (Out of the Box integration to SAP Manufacturing & Production Engineering):
 							<form>
 								<div class=form-check>
 									<label for=check1 class=form-check-label>
@@ -907,7 +907,7 @@
 			<div class="modal-body">
 				<div class="container">
 					<ul class="list-group" style="width:400px">
-						<li class="list-group-item list-group-item-secondary"> Fields used from Production Order object comming from ERP</li>
+						<li class="list-group-item list-group-item-secondary"> Fields used from Production Order object from ERP</li>
 						<li class="list-group-item list-group-item">Production Order</li>
 						<li class="list-group-item list-group-item">Product description</li>
 						<li class="list-group-item list-group-item">Quantity</li>
@@ -920,7 +920,7 @@
 
 				<div class="container">
 					<ul class="list-group" style="width:400px; margin-top:10px">
-						<li class="list-group-item list-group-item-secondary">Fields needed in the spreadsheet</li>
+						<li class="list-group-item list-group-item-secondary">Fields needed in the Excel</li>
 						<li class="list-group-item list-group-item">Steps</li>
 						<li class="list-group-item list-group-item">Main Activity</li>
 						<li class="list-group-item list-group-item">Description</li>

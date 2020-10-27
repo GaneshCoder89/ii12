@@ -84,6 +84,18 @@ function showStep4() {
   //  document.getElementById("idFrame").width = "98%"
 
 }
+function showStep5() {
+    document.getElementById("idFrame").src = "st5.html",
+    document.getElementById("idFrame").style.visibility = "visible";
+  //  document.getElementById("idFrame").width = "98%"
+
+}
+function showStep6() {
+    document.getElementById("idFrame").src = "st6.html",
+    document.getElementById("idFrame").style.visibility = "visible";
+  //  document.getElementById("idFrame").width = "98%"
+
+}
 
 
 

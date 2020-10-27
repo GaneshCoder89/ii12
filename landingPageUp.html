@@ -109,10 +109,10 @@
     <div class=grid-container>
         <div>
             <div class="panel panel-default">
-                <div class=panel-heading style=font-weight:bolder id=pah>Project Name -</div>
+                <div class=panel-heading style=font-weight:bolder id=pah>App Name -</div>
                 <div class=panel-body style=height:700px>
                     <div class=wrapper-uploader>
-                        <p style=margin-bottom:20px>Import Spreadsheet:</p>
+                        <p style=margin-bottom:20px>Import Excel:</p>
                         <label class="btn btn-primary">
                             Upload <input class=uploadBtn hidden id=updS onchange=onUpload() type=file>
                         </label>
@@ -121,7 +121,7 @@
                         </button>
                         <div class="progress wrapper-progress">
                             <div class=progress-bar style=width:0% id=idProgressBar aria-valuemax=100 aria-valuemin=0
-                                aria-valuenow=40 role=progressbar>0%</div>
+                                aria-valuenow=40 role=progressbar></div>
                         </div>
                     </div>
                     <!--
@@ -248,7 +248,7 @@
 
                     <div class=wrapper-views  id=idViews>
                         <div class="container"
-                            style=" width: 200px; padding-left: 0px; margin-left: 0px; margin-top: 10px;">
+                            style=" width: 240px; padding-left: 0px; margin-left: 0px; margin-top: 10px;">
                             <div class="panel-group" id="accordion">
                                 <div class="panel panel-default" style="border-color: white; border: 0px;">
                                     <div class="panel-heading"
@@ -269,28 +269,28 @@
                                            <label><input type="checkbox" onclick="showScan()" value="">Scan/Search</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep1()" value="">Step 1</label>
+                                           <label><input type="checkbox" onclick="showStep1()" value="">Attach Tires to the Wheels</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep2()" value="">Step 2</label>
+                                           <label><input type="checkbox" onclick="showStep2()" value="">Attach the Cassette</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep3()" value="">Step 3</label>
+                                           <label><input type="checkbox" onclick="showStep3()" value="">Attach the Brake Discs</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep4()" value="">Step 4</label>
+                                           <label><input type="checkbox" onclick="showStep4()" value="">Attach Seat to frame</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep4()" value="">Step 5</label>
+                                           <label><input type="checkbox" onclick="showStep5()" value="">Install Bottom Bracket</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep4()" value="">Step 6</label>
+                                           <label><input type="checkbox" onclick="showStep6()" value="">Install Crank</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep4()" value="">Report Defect</label>
+                                           <label><input type="checkbox" onclick="showStep5()" value="">Report Defect</label>
                                         </div>
                                            <div class="checkbox">
-                                           <label><input type="checkbox" onclick="showStep4()" value="">Get Help</label>
+                                           <label><input type="checkbox" onclick="showStep6()" value="">Get Help</label>
                                             </div>
                                         </div>
 
@@ -329,8 +329,12 @@
                         style="float:right;margin-right: 10px;">Marketplace</button>
                 </div>
                 <div class=panel-body style=text-align:center;height:700px>
-                    <iframe width="1124" height="768" style= "visibility:hidden;-webkit-transform:scale(0.7);-moz-transform-scale(0.7);margin:auto;border:1px solid #000;" id=idFrame
-                        ></iframe>
+                    <div class="iframewrapper" style="position: relative;">
+                        <div class="iframeitem" style="position: absolute; top: -100px;left: -140px;">
+                            <iframe width="1124" height="768" style= "visibility:hidden;-webkit-transform:scale(0.7);-moz-transform-scale(0.7);margin:auto;border:1px solid #000;" id=idFrame>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
